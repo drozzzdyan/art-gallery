@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 16.562 16.6502" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="16.6502" width="16.562" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Слой-1">
+<path d="M5.77806 11.1929C5.77806 10.1637 6.44695 17.4959 3.91782 15.4193C3.47691 15.0573 0.608142 0.944245 0.755105 0.797405C0.956961 0.595717 14.7531 4.3036 15.3353 5.00903C17.647 7.81033 9.43329 6.62055 10.4145 6.62055C12.9752 6.62055 15.051 8.66766 15.051 11.1929C15.051 12.4866 14.5062 13.6549 13.6304 14.4866C12.7968 15.2784 11.6633 15.7653 10.4145 15.7653C7.85389 15.7653 5.77806 13.7181 5.77806 11.1929Z" fill="#7943a4" fill-opacity="0.523351" fill-rule="nonzero" opacity="1" stroke="#7943a4" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.3591"/>
+<text fill="#7943a4" fill-opacity="0.523351" font-family="SFPro-Regular" font-size="106.3" opacity="1" stroke="none" text-anchor="middle" transform="matrix(1 0 0 1 21.4859 603.102)" x="0" y="0">
+<tspan textLength="261.131" x="132.066" y="101">Текст</tspan>
+</text>
+<text fill="#7943a4" fill-opacity="0.523351" font-family="SFPro-Regular" font-size="106.3" opacity="1" stroke="none" text-anchor="middle" transform="matrix(1 0 0 1 13.4296 693.578)" x="0" y="0">
+<tspan textLength="53.9806" x="10" y="101">Т</tspan>
+<tspan textLength="55.4858" x="10" y="228">е</tspan>
+</text>
+</g>
+</svg>
