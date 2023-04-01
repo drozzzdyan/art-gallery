@@ -289,7 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.parentNode.classList.toggle('stop-scroll');
     document.body.classList.toggle('stop-scroll');
 
-    console.log(loginBtn.getAttribute('tabindex'));
     if (loginBtn.getAttribute('tabindex') === '-1') {
       loginBtn.setAttribute('tabindex', '0');
       navLinks.forEach(element => {

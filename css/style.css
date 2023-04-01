@@ -4,22 +4,43 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Regular"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
-  font-family: 'Open Sans', sans-serif;
-  /* overflow: overlay; */
+  font-family: "OpenSans", sans-serif;
+  overflow: overlay;
 }
 
 body {
-  cursor: url('../img/cursor.svg'), auto;
   background-color: var(--white);
-}
-
-a {
-  cursor: url('../img/Cursor-pointer.svg'), auto;
-}
-
-label {
-  cursor: url('../img/Cursor-pointer.svg'), auto;
 }
 
 ::-webkit-scrollbar {
@@ -70,7 +91,7 @@ label {
   padding: 0;
   border: none;
   background-color: transparent;
-  cursor: url('../img/Cursor-pointer.svg'), auto;
+  cursor: pointer;
   outline: none;
   -moz-outline: none;
 }
@@ -147,6 +168,9 @@ input {
   display: flex;
 }
 
+label {
+  cursor: pointer;
+}
 
 /*=============================================
 =                    Header                   =
@@ -174,6 +198,7 @@ input {
 
 .burger__line_1 {
   top: 0;
+  left: 0;
   width: 100%;
   transition: transform .3s ease-in-out,
   background-color .3s ease-in-out;
@@ -181,6 +206,7 @@ input {
 
 .burger__line_2 {
   top: calc(50% - 2px);
+  left: 0;
   width: 80%;
   transition: transform .3s ease-in-out,
   opacity .3s ease-in-out,
@@ -189,6 +215,7 @@ input {
 
 .burger__line_3 {
   bottom: 0;
+  left: 0;  
   width: 65%;
   transition: transform .3s ease-in-out,
   width .3s ease-in-out,
@@ -907,14 +934,6 @@ input {
   display: none;
 }
 
-.choices[data-type*=select-one] {
-  cursor: url('../img/Cursor-pointer.svg'), auto;
-}
-
-.choices__item--selectable {
-  cursor: url('../img/Cursor-pointer.svg'), auto;
-}
-
 .is-open .choices__inner {
   border-radius: 6px;
 }
@@ -922,10 +941,6 @@ input {
 /* checkbox */
 .gallery__checkboxes {
   flex-direction: column;
-}
-
-.gallery__checkbox:hover {
-  cursor: url('../img/Cursor-pointer.svg'), auto;
 }
 
 .gallery__checkbox-input {
@@ -1354,7 +1369,6 @@ path {
   font-size: 24px;
   line-height: 32px;
   color: var(--grey-dark);
-  cursor: url('../img/Cursor-pointer.svg'), auto;
   outline: none;
 }
 
@@ -1709,7 +1723,6 @@ path {
 .swiper-button-next,
 .swiper-button-prev {
   top: var(--swiper-navigation-top-offset, 49.3%);
-  cursor: url('../img/Cursor-pointer.svg'), auto;
 }
 
 .swiper-button-next,

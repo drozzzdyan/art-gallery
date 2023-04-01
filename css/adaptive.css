@@ -181,6 +181,8 @@
   }
 
   .header__upper {
+    padding: 0;
+    height: 100px;
     justify-content: space-between;
   }
 
@@ -379,6 +381,24 @@
 
   .gallery {
     background-image: url('../img/gallery/gallery-bg-1024.jpg');
+  }
+
+  .projects__card-link_1::before,
+  .projects__card-link_3::before,
+  .projects__card-link_7::before,
+  .projects__card-link_8::before,
+  .projects__card-link_9::before {
+    background-size: 210px auto;
+  }
+  .projects__card-link_2::before {
+    background-size: 290px auto;
+  }
+
+
+  .projects__card-link_4::before,
+  .projects__card-link_5::before,
+  .projects__card-link_6::before {
+    background-size: 100px auto;
   }
 }
 
@@ -930,7 +950,7 @@
   }
 
   .projects__descr {
-    margin-right: -0.5px;
+    margin-right: -0.81px;
     margin-bottom: 50px;
     padding-right: 0;
     font-weight: 400;
