@@ -84,9 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
     renderChoiceLimit: 3,
   });
 
-  const ac = new Accordion('.catalog__epoch', {
+  const ac = new Accordion('.epoch', {
     duration: 300,
   });
+  ac.open(0);
 
   //////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////// modal window /////////////////////////////////////

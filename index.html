@@ -29,21 +29,22 @@
       <div class="flex menu">
         <nav class="header__nav">
           <ul class="flex list-reset nav-list">
-            <li class="list-reset nav-list__item"><a href="#" class="link-reset header__link" tabindex="0">О нас</a>
+            <li class="list-reset nav-list__item"><a href="#" class="link-reset nav-list__link" tabindex="0">О нас</a>
             </li>
-            <li class="list-reset nav-list__item"><a href="#" class="link-reset header__link" tabindex="0">Галерея</a>
+            <li class="list-reset nav-list__item"><a href="#" class="link-reset nav-list__link" tabindex="0">Галерея</a>
             </li>
-            <li class="list-reset nav-list__item"><a href="#" class="link-reset header__link" tabindex="0">Каталог</a>
+            <li class="list-reset nav-list__item"><a href="#" class="link-reset nav-list__link" tabindex="0">Каталог</a>
             </li>
-            <li class="list-reset nav-list__item"><a href="#" class="link-reset header__link" tabindex="0">События</a>
+            <li class="list-reset nav-list__item"><a href="#" class="link-reset nav-list__link" tabindex="0">События</a>
             </li>
-            <li class="list-reset nav-list__item"><a href="#" class="link-reset header__link" tabindex="0">Проекты</a>
+            <li class="list-reset nav-list__item"><a href="#" class="link-reset nav-list__link" tabindex="0">Проекты</a>
             </li>
-            <li class="list-reset nav-list__item"><a href="#" class="link-reset header__link" tabindex="0">Контакты</a>
+            <li class="list-reset nav-list__item"><a href="#" class="link-reset nav-list__link"
+                tabindex="0">Контакты</a>
             </li>
           </ul>
         </nav>
-        <button class="btn-reset header__link header__login" tabindex="0">
+        <button class="btn-reset header__login" tabindex="0">
           <svg class="login-icon" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
@@ -52,8 +53,9 @@
         </button>
       </div>
       <button class="btn-reset search-btn">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
+        <svg class="search-btn__svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="search-btn__path" fill-rule="evenodd" clip-rule="evenodd"
             d="M24.501 12C24.501 16.9706 20.4715 21 15.501 21C10.5304 21 6.50098 16.9706 6.50098 12C6.50098 7.02944 10.5304 3 15.501 3C20.4715 3 24.501 7.02944 24.501 12ZM27.501 12C27.501 18.6274 22.1284 24 15.501 24C12.7289 24 10.1764 23.0601 8.14471 21.4815L2.62132 27.0049L0.5 24.8836L6.0229 19.3607C4.44228 17.3283 3.50098 14.7741 3.50098 12C3.50098 5.37258 8.87356 0 15.501 0C22.1284 0 27.501 5.37258 27.501 12Z" />
         </svg>
       </button>
@@ -66,7 +68,7 @@
       <ul class="list-reset flex art-trends">
         <li class="flex list-reset art-trends__item dropdown">
           <a href="#" class="link-reset art-trends__link" tabindex="1">Реализм</a>
-          <span class="art-trend__arrow"></span>
+          <span class="art-trends__arrow"></span>
           <ul class="list-reset dropdown__content" data-simplebar>
             <li class="list-reset dropdown__item dropdown__item_tintorreto">
               <a href="#" class="link-reset dropdown__link" tabindex="0">Тинторетто</a>
@@ -84,7 +86,7 @@
         </li>
         <li class="flex list-reset art-trends__item dropdown">
           <a href="#" class="link-reset art-trends__link" tabindex="1">Импрессионизм</a>
-          <span class="art-trend__arrow"></span>
+          <span class="art-trends__arrow"></span>
           <ul class="list-reset dropdown__content" data-simplebar>
             <li class="list-reset dropdown__item dropdown__item_monet">
               <a href="#" class="link-reset dropdown__link" tabindex="0">Моне</a>
@@ -102,7 +104,7 @@
         </li>
         <li class="flex list-reset art-trends__item dropdown">
           <a href="#" class="link-reset art-trends__link" tabindex="1">Постимпрессионизм</a>
-          <span class="art-trend__arrow"></span>
+          <span class="art-trends__arrow"></span>
           <ul class="list-reset dropdown__content" data-simplebar>
             <li class="list-reset dropdown__item dropdown__item_van-gogh">
               <a href="#" class="link-reset dropdown__link" tabindex="0">Ван Гог</a>
@@ -120,7 +122,7 @@
         </li>
         <li class="flex list-reset art-trends__item dropdown">
           <a href="#" class="link-reset art-trends__link" tabindex="1">Авангард</a>
-          <span class="art-trend__arrow"></span>
+          <span class="art-trends__arrow"></span>
           <ul class="list-reset dropdown__content" data-simplebar>
             <li class="list-reset dropdown__item dropdown__item_kandinsky">
               <a href="#" class="link-reset dropdown__link" tabindex="0">Кандинский</a>
@@ -138,7 +140,7 @@
         </li>
         <li class="flex list-reset art-trends__item dropdown">
           <a href="#" class="link-reset art-trends__link" tabindex="1">Футуризм</a>
-          <span class="art-trend__arrow"></span>
+          <span class="art-trends__arrow"></span>
           <ul class="list-reset dropdown__content" data-simplebar>
             <li class="list-reset dropdown__item dropdown__item_carra">
               <a href="#" class="link-reset dropdown__link" tabindex="0">Карра</a>
@@ -160,7 +162,7 @@
   </header>
 
   <section class="hero">
-    <div class="hero__content flex">
+    <div class="flex hero__content">
       <h1 class="h-reset hero__header">Прикоснитесь к&nbsp;прекрасному</h1>
       <p class="p-reset hero__descr">
         Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
@@ -222,7 +224,6 @@
           </label>
         </div>
       </div>
-      <!-- Мой слайдер, моя гордость (нет) -->
       <div class="gallery__slideshow slider" data-items="3">
         <div class="flex slider__navigation">
           <button class="btn-reset slider__btn slider__btn_previos" aria-label="предыдущий слайд"></button>
@@ -442,8 +443,8 @@
           <img class="catalog__portrait" src="img/catalog/Domenico-Ghirlandaio.jpg" alt="Domenico Ghirlandaio">
           <figcaption class="catalog__work-descr">
             <div class="flex catalog__work-header">
-              <h3 class="h-reset painting__author">Доменико Гирландайо</h3>
-              <span class="painting__years">2&nbsp;июня 1448&ndash;11 января 1494</span>
+              <h3 class="h-reset catalog__author-window">Доменико Гирландайо</h3>
+              <span class="catalog__years">2&nbsp;июня 1448&ndash;11 января 1494</span>
             </div>
             <p class="p-reset descr catalog__work-text">
               Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
@@ -458,20 +459,20 @@
         <figure class="h-reset flex catalog__show catalog__show_empty catalog__show_hide">
           <img class="catalog__portrait catalog__portrait_empty" src="img/catalog/catalog-authot-empty.jpg"
             alt="Х - художник">
-          <figcaption class="catalog__work-descr catalog__work-descr_empty">
+          <figcaption class="painting catalog__work-descr catalog__work-descr_empty">
             <h3 class="h-reset painting__author painting__author_empty">Что мы о нём знаем?</h3>
             <p class="p-reset descr catalog__work-text catalog__work-text_empty">
               Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!
             </p>
-            <a href="#gallery" class="link-reset catalog__link_empty">В галерею</a>
+            <a href="#gallery" class="link-reset catalog__empty-link">В галерею</a>
           </figcaption>
         </figure>
-        <div class="catalog__epoch">
+        <div class="epoch">
           <div class="ac">
             <h2 class="ac-header">
               <button type="button" class="ac-trigger">
                 <span class="epoch__btn-wrapper">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
-                <span class="catalog__btn-open-epoch"></span>
+                <span class="epoch__btn-open"></span>
               </button>
             </h2>
             <div class="ac-panel">
@@ -555,19 +556,19 @@
             <h2 class="ac-header">
               <button type="button" class="ac-trigger">
                 <span class="epoch__btn-wrapper">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
-                <span class="catalog__btn-open-epoch"></span>
+                <span class="epoch__btn-open"></span>
               </button>
             </h2>
             <div class="ac-panel">
               <div class="ac-text">
-                <div class="flex catalog__epoch_empty">
-                  <div class="catalog__picture_empty"></div>
-                  <div class="flex catalog__descr_empty">
-                    <h3 class="h-reset catalog__header_empty">Здесь пока пусто</h3>
-                    <p class="p-reset catalog__text_empty">
+                <div class="flex epoch__empty-item">
+                  <div class="epoch__empty-picture"></div>
+                  <div class="flex epoch__empty-descr">
+                    <h3 class="h-reset epoch__empty-header">Здесь пока пусто</h3>
+                    <p class="p-reset epoch__empty-text">
                       А в галерее вы всегда можете найти что-то интересное для себя
                     </p>
-                    <a href="#gallery" class="link-reset catalog__link_empty">В галерею</a>
+                    <a href="#gallery" class="link-reset catalog__empty-link">В галерею</a>
                   </div>
                 </div>
               </div>
@@ -577,19 +578,19 @@
             <h2 class="ac-header">
               <button type="button" class="ac-trigger">
                 <span class="epoch__btn-wrapper">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
-                <span class="catalog__btn-open-epoch"></span>
+                <span class="epoch__btn-open"></span>
               </button>
             </h2>
             <div class="ac-panel">
               <div class="ac-text">
-                <div class="flex catalog__epoch_empty">
-                  <div class="catalog__picture_empty"></div>
-                  <div class="flex catalog__descr_empty">
-                    <h3 class="h-reset catalog__header_empty">Здесь пока пусто</h3>
-                    <p class="p-reset catalog__text_empty">
+                <div class="flex epoch__empty-item">
+                  <div class="epoch__empty-picture"></div>
+                  <div class="flex epoch__empty-descr">
+                    <h3 class="h-reset epoch__empty-header">Здесь пока пусто</h3>
+                    <p class="p-reset epoch__empty-text">
                       А в галерее вы всегда можете найти что-то интересное для себя
                     </p>
-                    <a href="#gallery" class="link-reset catalog__link_empty">В галерею</a>
+                    <a href="#gallery" class="link-reset catalog__empty-link">В галерею</a>
                   </div>
                 </div>
               </div>
@@ -599,19 +600,19 @@
             <h2 class="ac-header">
               <button type="button" class="ac-trigger">
                 <span class="epoch__btn-wrapper">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
-                <span class="catalog__btn-open-epoch"></span>
+                <span class="epoch__btn-open"></span>
               </button>
             </h2>
             <div class="ac-panel">
               <div class="ac-text">
-                <div class="flex catalog__epoch_empty">
-                  <div class="catalog__picture_empty"></div>
-                  <div class="flex catalog__descr_empty">
-                    <h3 class="h-reset catalog__header_empty">Здесь пока пусто</h3>
-                    <p class="p-reset catalog__text_empty">
+                <div class="flex epoch__empty-item">
+                  <div class="epoch__empty-picture"></div>
+                  <div class="flex epoch__empty-descr">
+                    <h3 class="h-reset epoch__empty-header">Здесь пока пусто</h3>
+                    <p class="p-reset epoch__empty-text">
                       А в галерее вы всегда можете найти что-то интересное для себя
                     </p>
-                    <a href="#gallery" class="link-reset catalog__link_empty">В галерею</a>
+                    <a href="#gallery" class="link-reset catalog__empty-link">В галерею</a>
                   </div>
                 </div>
               </div>
@@ -621,19 +622,19 @@
             <h2 class="ac-header">
               <button type="button" class="ac-trigger">
                 <span class="epoch__btn-wrapper">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
-                <span class="catalog__btn-open-epoch"></span>
+                <span class="epoch__btn-open"></span>
               </button>
             </h2>
             <div class="ac-panel">
               <div class="ac-text">
-                <div class="flex catalog__epoch_empty">
-                  <div class="catalog__picture_empty"></div>
-                  <div class="flex catalog__descr_empty">
-                    <h3 class="h-reset catalog__header_empty">Здесь пока пусто</h3>
-                    <p class="p-reset catalog__text_empty">
+                <div class="flex epoch__empty-item">
+                  <div class="epoch__empty-picture"></div>
+                  <div class="flex epoch__empty-descr">
+                    <h3 class="h-reset epoch__empty-header">Здесь пока пусто</h3>
+                    <p class="p-reset epoch__empty-text">
                       А в галерее вы всегда можете найти что-то интересное для себя
                     </p>
-                    <a href="#gallery" class="link-reset catalog__link_empty">В галерею</a>
+                    <a href="#gallery" class="link-reset catalog__empty-link">В галерею</a>
                   </div>
                 </div>
               </div>
@@ -643,19 +644,19 @@
             <h2 class="ac-header">
               <button type="button" class="ac-trigger">
                 <span class="epoch__btn-wrapper">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
-                <span class="catalog__btn-open-epoch"></span>
+                <span class="epoch__btn-open"></span>
               </button>
             </h2>
             <div class="ac-panel">
               <div class="ac-text">
-                <div class="flex catalog__epoch_empty">
-                  <div class="catalog__picture_empty"></div>
-                  <div class="flex catalog__descr_empty">
-                    <h3 class="h-reset catalog__header_empty">Здесь пока пусто</h3>
-                    <p class="p-reset catalog__text_empty">
+                <div class="flex epoch__empty-item">
+                  <div class="epoch__empty-picture"></div>
+                  <div class="flex epoch__empty-descr">
+                    <h3 class="h-reset epoch__empty-header">Здесь пока пусто</h3>
+                    <p class="p-reset epoch__empty-text">
                       А в галерее вы всегда можете найти что-то интересное для себя
                     </p>
-                    <a href="#gallery" class="link-reset catalog__link_empty">В галерею</a>
+                    <a href="#gallery" class="link-reset catalog__empty-link">В галерею</a>
                   </div>
                 </div>
               </div>
@@ -665,19 +666,19 @@
             <h2 class="ac-header">
               <button type="button" class="ac-trigger">
                 <span class="epoch__btn-wrapper">C&nbsp;2000г</span>
-                <span class="catalog__btn-open-epoch"></span>
+                <span class="epoch__btn-open"></span>
               </button>
             </h2>
             <div class="ac-panel">
               <div class="ac-text">
-                <div class="flex catalog__epoch_empty">
-                  <div class="catalog__picture_empty"></div>
-                  <div class="flex catalog__descr_empty">
-                    <h3 class="h-reset catalog__header_empty">Здесь пока пусто</h3>
-                    <p class="p-reset catalog__text_empty">
+                <div class="flex epoch__empty-item">
+                  <div class="epoch__empty-picture"></div>
+                  <div class="flex epoch__empty-descr">
+                    <h3 class="h-reset epoch__empty-header">Здесь пока пусто</h3>
+                    <p class="p-reset epoch__empty-text">
                       А в галерее вы всегда можете найти что-то интересное для себя
                     </p>
-                    <a href="#gallery" class="link-reset catalog__link_empty">В галерею</a>
+                    <a href="#gallery" class="link-reset catalog__empty-link">В галерею</a>
                   </div>
                 </div>
               </div>
@@ -696,7 +697,7 @@
           <div class="swiper-slide">
             <div class="flex news news_image-1">
               <div class="flex news__location-time">
-                <span class="news__location">Музей им. Щусева</span>
+                <address class="news__location">Музей им. Щусева</address>
                 <span class="news__time">
                   с <time datetime="2023-03-20">20 марта</time> по <time datetime="2023-04-30">30 апреля</time>
                 </span>
@@ -712,7 +713,7 @@
           <div class="swiper-slide">
             <div class="flex news news_image-2">
               <div class="flex news__location-time">
-                <span class="news__location">ММОМА</span>
+                <address class="news__location">ММОМА</address>
                 <span class="news__time">
                   <time datetime="2023-03-24">24 марта 19:00</time>
                 </span>
@@ -729,7 +730,7 @@
           <div class="swiper-slide">
             <div class="flex news news_image-3">
               <div class="flex news__location-time">
-                <span class="news__location">Еврейский музей</span>
+                <address class="news__location">Еврейский музей</address>
                 <span class="news__time">
                   с <time datetime="2023-03-31">31 марта</time> по <time datetime="2023-04-21">21 апреля</time>
                 </span>
@@ -745,7 +746,7 @@
           <div class="swiper-slide">
             <div class="flex news news_image-4">
               <div class="flex news__location-time">
-                <span class="news__location">Музей им. Щусева</span>
+                <address class="news__location">Музей им. Щусева</address>
                 <span class="news__time">
                   с <time datetime="2023-03-20">20 марта</time> по <time datetime="2023-04-30">30 апреля</time>
                 </span>
@@ -761,7 +762,7 @@
           <div class="swiper-slide">
             <div class="flex news news_image-5">
               <div class="flex news__location-time">
-                <span class="news__location">ММОМА</span>
+                <address class="news__location">ММОМА</address>
                 <span class="news__time">
                   <time datetime="2023-03-24">24 марта 19:00</time>
                 </span>
