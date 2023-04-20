@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         spaceBetween: 27,
       },
-      600: {
+      576: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       1024: {
         slidesPerView: 2,
       },
-      600: {
+      576: {
         slidesPerView: 2,
         spaceBetween: 40,
       },
@@ -88,6 +88,61 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 300,
   });
   ac.open(0);
+
+  //////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////// dropdown window //////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////
+  const artBtn = document.querySelectorAll('.art-trends__link');
+  const dropdownList = document.querySelectorAll('.dropdown__content');
+  const dropdownScroll = document.querySelectorAll('.simplebar-vertical');
+  const artBtnArrow = document.querySelectorAll('.art-trends__arrow');
+
+  function hideDropdown(hide_el) {
+    let interval = setTimeout(() => {
+      hide_el.classList.add('dropdown__content_hide');
+      clearTimeout(interval);
+    }, 300);
+  }
+
+  function closeAllDropdown(openIndex) {
+    for (let i = 0; i < openIndex; i++) {
+      dropdownList[i].classList.remove('dropdown__content_open');
+      dropdownScroll[i].classList.remove('simplebar-vertical_open');
+      artBtnArrow[i].classList.remove('art-trends__arrow_open');
+      hideDropdown(dropdownList[i]);
+    }
+    for (let i = openIndex + 1; i < artBtn.length; i++) {
+      dropdownList[i].classList.remove('dropdown__content_open');
+      dropdownScroll[i].classList.remove('simplebar-vertical_open');
+      artBtnArrow[i].classList.remove('art-trends__arrow_open');
+      hideDropdown(dropdownList[i]);
+    }
+  }
+
+  closeAllDropdown(artBtn.length);
+
+  for (let i = 0; i < artBtn.length; i++) {
+    artBtn[i].addEventListener('click', () => {
+      if (dropdownList[i].classList.value.includes('dropdown__content_hide')) {
+        dropdownList[i].classList.remove('dropdown__content_hide');
+      } else {
+        hideDropdown(dropdownList[i]);
+      }
+      closeAllDropdown(i);
+      let interval = setTimeout(() => {
+        dropdownList[i].classList.toggle('dropdown__content_open');
+        dropdownScroll[i].classList.toggle('simplebar-vertical_open');
+        artBtnArrow[i].classList.toggle('art-trends__arrow_open');
+        clearTimeout(interval);
+      }, 10);
+    })
+    // Закрытие по кнопке escape
+    artBtn[i].addEventListener('keydown', element => {
+      if (element.key === 'Escape') {
+        closeAllDropdown(artBtn.length);
+      }
+    })
+  }
 
   //////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////// modal window /////////////////////////////////////
@@ -289,18 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.classList.toggle('menu_open');
     document.body.parentNode.classList.toggle('stop-scroll');
     document.body.classList.toggle('stop-scroll');
-
-    if (loginBtn.getAttribute('tabindex') === '-1') {
-      loginBtn.setAttribute('tabindex', '0');
-      navLinks.forEach(element => {
-        element.setAttribute('tabindex', '0');
-      });
-    } else {
-      loginBtn.setAttribute('tabindex', '-1');
-      navLinks.forEach(element => {
-        element.setAttribute('tabindex', '-1');
-      });
-    }
   })
 
   //////////////////////////////////////////////////////////////////////////////////
@@ -319,4 +362,34 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.innerWidth <= 600) {
     callbackBtn.textContent = 'Заказать';
   }
+
+  //////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////  tooltips  ///////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////
+  const tooltip = document.querySelectorAll('.projects__tooltip');
+  const tooltipContent = document.querySelectorAll('.projects__tooltip-content');
+  const TOOLTIP_WIDTH = 264;
+
+  // Перерасчёт расположения, чтобы не выползал тултип за область видимости на любом разрешении
+  function recuclTooltips() {
+    for (let i = 0; i < tooltip.length; i++) {
+      let distanceLeft = tooltip[i].getBoundingClientRect().x;
+      let distanceRight = window.innerWidth - distanceLeft;
+      if (distanceRight < TOOLTIP_WIDTH) {
+        tooltipContent[i].style.left = `-${TOOLTIP_WIDTH - distanceRight + 15}px`;
+      } else {
+        if (distanceLeft < TOOLTIP_WIDTH / 2) {
+          tooltipContent[i].style.left = `0px`;
+        } else {
+          tooltipContent[i].style.left = `-119px`;
+        }
+      }
+      tooltipContent[i].style.width = "264px";
+    };
+  }
+  recuclTooltips();
+
+  window.addEventListener('resize', () => {
+    recuclTooltips();
+  })
 })
