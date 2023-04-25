@@ -106,6 +106,7 @@
   .logo {
     margin-right: 0;
     width: 188px;
+    background-image: url('../img/logo-1024.svg');
   }
 
   .search-btn {
@@ -642,7 +643,8 @@
 
   .logo {
     width: 96.8px;
-    height: 22px;
+    height: 21px;
+    background-image: url('../img/logo-320.svg');
   }
 
   .header__upper {
@@ -765,7 +767,7 @@
 
   .gallery {
     padding: 50px 0;
-    height: 800px;
+    min-height: 800px;
     min-height: auto;
   }
 

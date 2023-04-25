@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Меняем содержимое кнопки при мобильной вресии
   const callbackBtn = document.querySelector('.callback__form-btn');
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= 768) {
     callbackBtn.textContent = 'Заказать';
   }
 

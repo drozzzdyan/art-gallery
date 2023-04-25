@@ -1,14 +1,16 @@
 const slider = document.querySelector('.slider');
-const sliderCounter  = document.querySelector('.slider__counter ');
+const sliderCounter = document.querySelector('.slider__counter ');
 
 const slides = document.querySelectorAll('.slider__slide');
 const btnLeft = document.querySelector('.slider__btn_previos');
 const btnRight = document.querySelector('.slider__btn_next');
 
+btnLeft.setAttribute("disabled", "disabled");
+
 // Функция настройки адаптива
 function checkWindow() {
   const windowWidth = window.innerWidth;
-  if (windowWidth > 1100) {
+  if (windowWidth > 1274) {
     slider.dataset.items = 3;
     return 3;
   } else {
@@ -81,6 +83,10 @@ btnRight.addEventListener('click', () => {
     openPage(page);
     sliderCounter.textContent = `${page + 1} / ${lastPage}`;
   }
+  btnLeft.removeAttribute("disabled");
+  if (page + 1 === lastPage) {
+    btnRight.setAttribute("disabled", "disabled");
+  }
 })
 
 btnLeft.addEventListener('click', () => {
@@ -89,6 +95,10 @@ btnLeft.addEventListener('click', () => {
     page--;
     openPage(page);
     sliderCounter.textContent = `${page + 1} / ${lastPage}`;
+  }
+  btnRight.removeAttribute("disabled");
+  if (page === 0) {
+    btnLeft.setAttribute("disabled", "disabled");
   }
 })
 
