@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="css/loader.css">
   <link rel="stylesheet" href="css/simplebar.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/choices.min.css">
@@ -15,9 +15,33 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/adaptive.css">
   <title>Blanchard</title>
+  <!-- preloader -->
+  <script>
+    window.onload = () => {
+      const loader = document.querySelector('.loader')
+      const loaderCircles = document.querySelectorAll('.loader__circle')
+      loader.classList.add('loader-hide')
+      loaderCircles.forEach(el => el.classList.add('loader__circles-hide'));
+      const timeout = setTimeout(() => {
+        loader.classList.add('loader-off')
+        document.body.classList.remove('stop-scroll')
+        clearTimeout(timeout)
+      }, 1000)
+    }
+  </script>
 </head>
 
-<body>
+<body class="stop-scroll">
+  <div class="loader">
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+  </div>
   <header class="header">
     <h1 class="main-header visually-hidden">Blanchard. Художественнная галлерея</h1>
     <div class="container flex header__upper">
@@ -838,8 +862,12 @@
             тенденций&nbsp;&mdash; современная методология разработки</span></button> обеспечение нашей
         деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет
         сомнений, что действия представителей оппозиции могут быть рассмотрены <button
-          class="btn-reset projects__tooltip">i<span class="projects__tooltip-content">Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции</span></button> исключительно в&nbsp;разрезе
-        маркетинговых и&nbsp;финансовых <button class="btn-reset projects__tooltip">i<span class="projects__tooltip-content">В&nbsp;стремлении повысить качество</span></button> предпосылок. Банальные,
+          class="btn-reset projects__tooltip">i<span class="projects__tooltip-content">Приятно, граждане, наблюдать, как
+            сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции</span></button> исключительно
+        в&nbsp;разрезе
+        маркетинговых и&nbsp;финансовых <button class="btn-reset projects__tooltip">i<span
+            class="projects__tooltip-content">В&nbsp;стремлении повысить качество</span></button> предпосылок.
+        Банальные,
         но&nbsp;неопровержимые выводы, а&nbsp;также
         представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
         очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости.

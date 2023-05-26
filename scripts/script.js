@@ -336,15 +336,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
   const menu = document.querySelector('.menu');
   const loginBtn = document.querySelector('.header__login');
-  const navLinks = document.querySelectorAll('.header__link');
+  const navLinks = document.querySelectorAll('.nav-list__link');
 
-
-  burger.addEventListener('click', () => {
+  function switchBurger() {
     burger.classList.toggle('burger_close');
     menu.classList.toggle('menu_open');
     document.body.parentNode.classList.toggle('stop-scroll');
     document.body.classList.toggle('stop-scroll');
+  }
+
+  burger.addEventListener('click', () => {
+    switchBurger()
   })
+
+  navLinks.forEach(element => {
+    element.addEventListener('click', () => {
+      switchBurger()
+    })
+  });
 
   //////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////// search btn ///////////////////////////////////////
