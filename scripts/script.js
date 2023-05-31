@@ -136,7 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
         clearTimeout(interval);
       }, 10);
     })
-    // Закрытие по кнопке escape
     artBtn[i].addEventListener('keydown', element => {
       if (element.key === 'Escape') {
         closeAllDropdown(artBtn.length);
@@ -152,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalItem = document.querySelectorAll('.modal__item');
   const slides = document.querySelectorAll('.slider__slide');
 
-  // скрываем всё при первом запуске
   modalItem.forEach(element => {
     element.classList.add('modal__item_hide');
     element.classList.add('modal__item_off');
@@ -160,7 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
   modal.classList.add('modal_hide');
   modal.classList.add('modal_off');
 
-  // функция плавного закрытия модальног окна
   function closeModal() {
     document.body.parentNode.classList.remove('stop-scroll');
     modal.classList.add('modal_off');
@@ -176,27 +173,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
   }
 
-  // закрытие по нажатию кнопки
   modalCloseBtn.forEach(element => {
     element.addEventListener('click', () => {
       closeModal();
     })
   });
 
-  // закрытие по нажатию области
   modal.addEventListener('click', () => {
     flag = true;
     closeModal();
   });
 
-  // закрытие по нажатию клавиши
   document.addEventListener('keydown', element => {
     if (element.key === 'Escape') {
       closeModal();
     }
   });
 
-  // Открытие соответсвующего модального окна
   for (let i = 0; i < slides.length; i++) {
     slides[i].addEventListener('click', () => {
       document.body.parentNode.classList.add('stop-scroll');
@@ -219,29 +212,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   for (let i = 0; i < authorsBtn.length; i++) {
     authorsBtn[i].addEventListener('click', () => {
-      // Снимаем со всех кнопок disabled и ставим на ту, на которую нажали
       authorsBtn.forEach(element => {
         element.removeAttribute('disabled');
       });
       authorsBtn[i].setAttribute('disabled', 'disabled');
-      // Плавно скрываем все элементы, те, которых нет, скрываться и не будут
       authorShow.forEach(element => {
         element.classList.add('catalog__show_off');
       });
-      // Отыскиваем нужный элемент разметки с описанием автора
       const author = document.getElementById(`author-${i}`);
-      // С задержкой убираем этот элемент из потока
       const timeout = setTimeout(() => {
         authorShow.forEach(element => {
           element.classList.add('catalog__show_hide');
         });
-        // Проверяем, есть ли вообще такой автор, если нет, то вставляем пустышку
         if (author === null) {
           authorShowEmpty.classList.remove('catalog__show_hide');
         } else {
           author.classList.remove('catalog__show_hide');
         }
-        // и снова задержка небольшая для плавнеости отображения
         const timeoutInner = setTimeout(() => {
           if (author === null) {
             authorShowEmpty.classList.remove('catalog__show_off');
@@ -262,7 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const errorMassage = document.querySelectorAll('.callback__form-error');
   const inputForm = document.querySelectorAll('.callback__form-input');
 
-  // спрячем сообщения об ошибке
   errorMassage.forEach(element => {
     element.classList.add('callback__form-error_hide');
   });
@@ -270,7 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
   btnForm.addEventListener('click', el => {
     let checkName = true;
 
-    // Проверка, чтобы минимум 2 буквы было в имени
     const normalizeName = inputForm[0].value.trim();
     if (normalizeName.length < 2) {
       mistakes = false;
@@ -281,7 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
       inputForm[0].classList.remove('callback__form-input_error');
     }
 
-    // проверка вхождения в телефон только числовых значений и длины
     const normalizePhoneNumber = inputForm[1].value.trim().split('');
     const alphabetNumber = '0123456789';
 
@@ -323,10 +307,8 @@ document.addEventListener('DOMContentLoaded', () => {
       iconLayout: 'default#image',
       iconImageHref: '../img/location.svg',
       iconImageSize: [20, 20],
-      // iconImageOffset: [-3, -42]
     });
 
-    // Размещение геообъекта на карте.
     myMap.geoObjects.add(myPlacemark);
   }
 
@@ -366,7 +348,6 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBtn.classList.toggle('search-btn_close');
   })
 
-  // Меняем содержимое кнопки при мобильной вресии
   const callbackBtn = document.querySelector('.callback__form-btn');
   if (window.innerWidth <= 768) {
     callbackBtn.textContent = 'Заказать';
@@ -379,7 +360,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const tooltipContent = document.querySelectorAll('.projects__tooltip-content');
   const TOOLTIP_WIDTH = 264;
 
-  // Перерасчёт расположения, чтобы не выползал тултип за область видимости на любом разрешении
   function recuclTooltips() {
     for (let i = 0; i < tooltip.length; i++) {
       let distanceLeft = tooltip[i].getBoundingClientRect().x;

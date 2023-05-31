@@ -5,17 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/loader.css">
-  <link rel="stylesheet" href="css/simplebar.min.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/choices.min.css">
-  <link rel="stylesheet" href="css/mySwiper.css">
-  <link rel="stylesheet" href="css/accordion.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/adaptive.css">
   <title>Blanchard</title>
-  <!-- preloader -->
+
   <script>
     window.onload = () => {
       const loader = document.querySelector('.loader')
@@ -29,6 +20,25 @@
       }, 1000)
     }
   </script>
+
+  <link rel="stylesheet" href="css/loader.min.css">
+  <link rel="stylesheet" href="css/simplebar.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/mySwiper.min.css">
+  <link rel="stylesheet" href="css/accordion.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/adaptive.min.css">
+
+  <script defer src="scripts/swiper-bundle.min.js"></script>
+  <script defer src="scripts/mySwiper.min.js"></script>
+  <script defer src="scripts/accordion.min.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ac7aecd5-cb20-46f8-a386-7d031c753469&lang=ru_RU"></script>
+  <script defer src="scripts/choices.min.js"></script>
+  <script defer src="scripts/simplebar.min.js"></script>
+  <script defer src="scripts/script.min.js"></script>
+
 </head>
 
 <body class="stop-scroll">
@@ -282,9 +292,9 @@
       </button>
       <figure class="h-reset flex modal__content">
         <picture class="modal__picture">
-          <source media="(max-width: 600px)" srcset="img/gallery/modal/figure-with-pink-face-320.jpg">
-          <source media="(max-width: 1024px)" srcset="img/gallery/modal/figure-with-pink-face-768.jpg">
-          <img src="img/gallery/modal/figure-with-pink-face.jpg" alt="figure-with-pink-face">
+          <source media="(max-width: 600px)" srcset="img/gallery/modal/figure-with-pink-face-320.webp">
+          <source media="(max-width: 1024px)" srcset="img/gallery/modal/figure-with-pink-face-768.webp">
+          <img src="img/gallery/modal/figure-with-pink-face.webp" alt="figure-with-pink-face">
         </picture>
         <figcaption class="modal__descr">
           <div class="modal__header painting">
@@ -312,9 +322,9 @@
       </button>
       <figure class="h-reset flex modal__content">
         <picture class="modal__picture">
-          <source media="(max-width: 600px)" srcset="img/gallery/modal/woman-with-a-rake-320.jpg">
-          <source media="(max-width: 1024px)" srcset="img/gallery/modal/woman-with-a-rake-768.jpg">
-          <img src="img/gallery/modal/woman-with-a-rake.jpg" alt="woman-with-a-rake">
+          <source media="(max-width: 600px)" srcset="img/gallery/modal/woman-with-a-rake-320.webp">
+          <source media="(max-width: 1024px)" srcset="img/gallery/modal/woman-with-a-rake-768.webp">
+          <img src="img/gallery/modal/woman-with-a-rake.webp" alt="woman-with-a-rake">
         </picture>
         <figcaption class="modal__descr">
           <div class="modal__header painting">
@@ -342,9 +352,9 @@
       </button>
       <figure class="h-reset flex modal__content">
         <picture class="modal__picture">
-          <source media="(max-width: 600px)" srcset="img/gallery/modal/stacks-320.jpg">
-          <source media="(max-width: 1024px)" srcset="img/gallery/modal/stacks-768.jpg">
-          <img src="img/gallery/modal/stacks.jpg" alt="stacks">
+          <source media="(max-width: 600px)" srcset="img/gallery/modal/stacks-320.webp">
+          <source media="(max-width: 1024px)" srcset="img/gallery/modal/stacks-768.webp">
+          <img src="img/gallery/modal/stacks.webp" alt="stacks">
         </picture>
         <figcaption class="modal__descr">
           <div class="modal__header painting">
@@ -372,9 +382,9 @@
       </button>
       <figure class="h-reset flex modal__content">
         <picture class="modal__picture">
-          <source media="(max-width: 600px)" srcset="img/gallery/modal/slide4-320.jpg">
-          <source media="(max-width: 1024px)" srcset="img/gallery/modal/slide4-768.jpg">
-          <img src="img/gallery/modal/slide4.jpg" alt="slide4">
+          <source media="(max-width: 600px)" srcset="img/gallery/modal/slide4-320.webp">
+          <source media="(max-width: 1024px)" srcset="img/gallery/modal/slide4-768.webp">
+          <img src="img/gallery/modal/slide4.webp" alt="slide4">
         </picture>
         <figcaption class="modal__descr">
           <div class="modal__header painting">
@@ -402,9 +412,9 @@
       </button>
       <figure class="h-reset flex modal__content">
         <picture class="modal__picture">
-          <source media="(max-width: 600px)" srcset="img/gallery/modal/slide5-320.jpg">
-          <source media="(max-width: 1024px)" srcset="img/gallery/modal/slide5-768.jpg">
-          <img src="img/gallery/modal/slide5.jpg" alt="slide5">
+          <source media="(max-width: 600px)" srcset="img/gallery/modal/slide5-320.webp">
+          <source media="(max-width: 1024px)" srcset="img/gallery/modal/slide5-768.webp">
+          <img src="img/gallery/modal/slide5.webp" alt="slide5">
         </picture>
         <figcaption class="modal__descr">
           <div class="modal__header painting">
@@ -432,9 +442,9 @@
       </button>
       <figure class="h-reset flex modal__content">
         <picture class="modal__picture">
-          <source media="(max-width: 600px)" srcset="img/gallery/modal/slide6-320.jpg">
-          <source media="(max-width: 1024px)" srcset="img/gallery/modal/slide6-768.jpg">
-          <img src="img/gallery/modal/slide6.jpg" alt="slide6">
+          <source media="(max-width: 600px)" srcset="img/gallery/modal/slide6-320.webp">
+          <source media="(max-width: 1024px)" srcset="img/gallery/modal/slide6-768.webp">
+          <img src="img/gallery/modal/slide6.webp" alt="slide6">
         </picture>
         <figcaption class="modal__descr">
           <div class="modal__header painting">
@@ -466,7 +476,7 @@
         <!-- Каждому автору будет присвоен id соответсвующий его порядку в списке -->
         <!-- Для первого автора необходимо указывать id="author-0" -->
         <figure class="h-reset flex catalog__show" id="author-11">
-          <img class="catalog__portrait" src="img/catalog/Domenico-Ghirlandaio.jpg" alt="Domenico Ghirlandaio">
+          <img class="catalog__portrait" src="img/catalog/Domenico-Ghirlandaio.webp" alt="Domenico Ghirlandaio">
           <figcaption class="catalog__work-descr">
             <div class="flex catalog__work-header">
               <h3 class="h-reset catalog__author-window">Доменико Гирландайо</h3>
@@ -483,7 +493,7 @@
         </figure>
         <!-- Специальная разметка под изображения тех авторов, о ком ещё не составили описание -->
         <figure class="h-reset flex catalog__show catalog__show_empty catalog__show_hide">
-          <img class="catalog__portrait catalog__portrait_empty" src="img/catalog/catalog-authot-empty.jpg"
+          <img class="catalog__portrait catalog__portrait_empty" src="img/catalog/catalog-authot-empty.webp"
             alt="Х - художник">
           <figcaption class="painting catalog__work-descr catalog__work-descr_empty">
             <h3 class="h-reset painting__author painting__author_empty">Что мы о нём знаем?</h3>
@@ -723,10 +733,10 @@
           <div class="swiper-slide">
             <div class="flex news">
               <picture class="news__picture">
-                <source media="(max-width: 767px)" srcset="img/events/news-image-1-1024.jpg">
-                <source media="(max-width: 1023px)" srcset="img/events/news-image-1-768.jpg">
-                <source media="(max-width: 1600px)" srcset="img/events/news-image-1-1024.jpg">
-                <img class="news__img" src="img/events/news-image-1.jpg" alt="Обложка новости 1">
+                <source media="(max-width: 767px)" srcset="img/events/news-image-1-1024.webp">
+                <source media="(max-width: 1023px)" srcset="img/events/news-image-1-768.webp">
+                <source media="(max-width: 1600px)" srcset="img/events/news-image-1-1024.webp">
+                <img class="news__img" src="img/events/news-image-1.webp" alt="Обложка новости 1">
               </picture>
               <div class="news__text-content">
                 <div class="flex news__location-time">
@@ -747,10 +757,10 @@
           <div class="swiper-slide">
             <div class="flex news">
               <picture class="news__picture">
-                <source media="(max-width: 767px)" srcset="img/events/news-image-2-1024.jpg">
-                <source media="(max-width: 1023px)" srcset="img/events/news-image-2-768.jpg">
-                <source media="(max-width: 1600px)" srcset="img/events/news-image-2-1024.jpg">
-                <img class="news__img" src="img/events/news-image-2.jpg" alt="Обложка новости 2">
+                <source media="(max-width: 767px)" srcset="img/events/news-image-2-1024.webp">
+                <source media="(max-width: 1023px)" srcset="img/events/news-image-2-768.webp">
+                <source media="(max-width: 1600px)" srcset="img/events/news-image-2-1024.webp">
+                <img class="news__img" src="img/events/news-image-2.webp" alt="Обложка новости 2">
               </picture>
               <div class="news__text-content">
                 <div class="flex news__location-time">
@@ -772,10 +782,10 @@
           <div class="swiper-slide">
             <div class="flex news">
               <picture class="news__picture">
-                <source media="(max-width: 767px)" srcset="img/events/news-image-3-1024.jpg">
-                <source media="(max-width: 1023px)" srcset="img/events/news-image-3-768.jpg">
-                <source media="(max-width: 1600px)" srcset="img/events/news-image-3-1024.jpg">
-                <img class="news__img" src="img/events/news-image-3.jpg" alt="Обложка новости 3">
+                <source media="(max-width: 767px)" srcset="img/events/news-image-3-1024.webp">
+                <source media="(max-width: 1023px)" srcset="img/events/news-image-3-768.webp">
+                <source media="(max-width: 1600px)" srcset="img/events/news-image-3-1024.webp">
+                <img class="news__img" src="img/events/news-image-3.webp" alt="Обложка новости 3">
               </picture>
               <div class="news__text-content">
                 <div class="flex news__location-time">
@@ -796,10 +806,10 @@
           <div class="swiper-slide">
             <div class="flex news">
               <picture class="news__picture">
-                <source media="(max-width: 767px)" srcset="img/events/news-image-4-1024.jpg">
-                <source media="(max-width: 1023px)" srcset="img/events/news-image-4-768.jpg">
-                <source media="(max-width: 1600px)" srcset="img/events/news-image-4-1024.jpg">
-                <img class="news__img" src="img/events/news-image-4.jpg" alt="Обложка новости 4">
+                <source media="(max-width: 767px)" srcset="img/events/news-image-4-1024.webp">
+                <source media="(max-width: 1023px)" srcset="img/events/news-image-4-768.webp">
+                <source media="(max-width: 1600px)" srcset="img/events/news-image-4-1024.webp">
+                <img class="news__img" src="img/events/news-image-4.webp" alt="Обложка новости 4">
               </picture>
               <div class="news__text-content">
                 <div class="flex news__location-time">
@@ -820,10 +830,10 @@
           <div class="swiper-slide">
             <div class="flex news">
               <picture class="news__picture">
-                <source media="(max-width: 767px)" srcset="img/events/news-image-5-1024.jpg">
-                <source media="(max-width: 1023px)" srcset="img/events/news-image-5-768.jpg">
-                <source media="(max-width: 1600px)" srcset="img/events/news-image-5-1024.jpg">
-                <img class="news__img" src="img/events/news-image-5.jpg" alt="Обложка новости 5">
+                <source media="(max-width: 767px)" srcset="img/events/news-image-5-1024.webp">
+                <source media="(max-width: 1023px)" srcset="img/events/news-image-5-768.webp">
+                <source media="(max-width: 1600px)" srcset="img/events/news-image-5-1024.webp">
+                <img class="news__img" src="img/events/news-image-5.webp" alt="Обложка новости 5">
               </picture>
               <div class="news__text-content">
                 <div class="flex news__location-time">
@@ -963,14 +973,7 @@
       </div>
     </div>
   </footer>
-  <!-- Scripts -->
-  <script defer src="scripts/swiper-bundle.min.js"></script>
-  <script defer src="scripts/choices.min.js"></script>
-  <script defer src="scripts/mySwiper.js"></script>
-  <script defer src="scripts/simplebar.min.js"></script>
-  <script defer src="scripts/accordion.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ac7aecd5-cb20-46f8-a386-7d031c753469&lang=ru_RU"></script>
-  <script defer src="scripts/script.js"></script>
+
 </body>
 
 </html>

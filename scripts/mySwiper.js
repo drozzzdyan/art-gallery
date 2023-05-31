@@ -7,7 +7,6 @@ const btnRight = document.querySelector('.slider__btn_next');
 
 btnLeft.setAttribute("disabled", "disabled");
 
-// Функция настройки адаптива
 function checkWindow() {
   const windowWidth = window.innerWidth;
   if (windowWidth > 1274) {
@@ -24,14 +23,10 @@ function checkWindow() {
   }
 }
 
-// Время продолжительности анимации
-// Пока вручную надо синхронить со стилями
+
 const ANIMATION_DURATION = 400;
-// Считаем количество элементов в слайдере
 const allSlides = slides.length;
-// Сколько будет отображено на одном слайде
 let countItemsPage = checkWindow();
-// Высчитываем номер последней страницы
 let lastPage = Math.floor(allSlides / countItemsPage);
 
 function renderSlides() {
@@ -75,7 +70,6 @@ function openPage(page) {
 renderSlides();
 let page = 0;
 sliderCounter.textContent = `${page + 1} / ${lastPage}`;
-// Обработчики событи на кнопки влево-вправо
 btnRight.addEventListener('click', () => {
   if (page < lastPage - 1) {
     closePage(page);
@@ -102,7 +96,6 @@ btnLeft.addEventListener('click', () => {
   }
 })
 
-// Пересчитываем всё заново, если изменили размер экрана
 window.addEventListener('resize', () => {
   checkWindow();
   renderSlides();

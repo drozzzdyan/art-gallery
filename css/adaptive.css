@@ -369,19 +369,19 @@
   }
 
   .hero__slide_1 {
-    background-image: url('../img/swiper/1024/birmingham-museums-1-1024x668.jpg');
+    background-image: url('../img/swiper/1024/birmingham-museums-1-1024x668.webp');
   }
 
   .hero__slide_2 {
-    background-image: url('../img/swiper/1024/birmingham-museums-2-1024x668.jpg');
+    background-image: url('../img/swiper/1024/birmingham-museums-2-1024x668.webp');
   }
 
   .hero__slide_3 {
-    background-image: url('../img/swiper/1024/birmingham-museums-3-1024x668.jpg');
+    background-image: url('../img/swiper/1024/birmingham-museums-3-1024x668.webp');
   }
 
   .gallery {
-    background-image: url('../img/gallery/gallery-bg-1024.jpg');
+    background-image: url('../img/gallery/gallery-bg-1024.webp');
   }
 
   .projects__card-link_1::before,
@@ -583,15 +583,15 @@
   }
 
   .hero__slide_1 {
-    background-image: url('../img/swiper/768/birmingham-museums-1-768x668.jpg');
+    background-image: url('../img/swiper/768/birmingham-museums-1-768x668.webp');
   }
 
   .hero__slide_2 {
-    background-image: url('../img/swiper/768/birmingham-museums-2-768x668.jpg');
+    background-image: url('../img/swiper/768/birmingham-museums-2-768x668.webp');
   }
 
   .hero__slide_3 {
-    background-image: url('../img/swiper/768/birmingham-museums-3-768x668.jpg');
+    background-image: url('../img/swiper/768/birmingham-museums-3-768x668.webp');
   }
 
   .search {
@@ -738,15 +738,15 @@
   }
 
   .hero__slide_1 {
-    background-image: url('../img/swiper/320/birmingham-museums-1-320x255.jpg');
+    background-image: url('../img/swiper/320/birmingham-museums-1-320x255.webp');
   }
 
   .hero__slide_2 {
-    background-image: url('../img/swiper/320/birmingham-museums-2-320x255.jpg');
+    background-image: url('../img/swiper/320/birmingham-museums-2-320x255.webp');
   }
 
   .hero__slide_3 {
-    background-image: url('../img/swiper/320/birmingham-museums-3-320x255.jpg');
+    background-image: url('../img/swiper/320/birmingham-museums-3-320x255.webp');
   }
 
   .subheaders {
@@ -810,27 +810,27 @@
   }
 
   .slider__slide_1 {
-    background-image: url('../img/gallery/slides/slide1-320.jpg');
+    background-image: url('../img/gallery/slides/slide1-320.webp');
   }
 
   .slider__slide_2 {
-    background-image: url('../img/gallery/slides/slide2-320.jpg');
+    background-image: url('../img/gallery/slides/slide2-320.webp');
   }
 
   .slider__slide_3 {
-    background-image: url('../img/gallery/slides/slide3-320.jpg');
+    background-image: url('../img/gallery/slides/slide3-320.webp');
   }
 
   .slider__slide_4 {
-    background-image: url('../img/gallery/slides/slide4-320.jpg');
+    background-image: url('../img/gallery/slides/slide4-320.webp');
   }
 
   .slider__slide_5 {
-    background-image: url('../img/gallery/slides/slide5-320.jpg');
+    background-image: url('../img/gallery/slides/slide5-320.webp');
   }
 
   .slider__slide_5 {
-    background-image: url('../img/gallery/slides/slide5-320.jpg');
+    background-image: url('../img/gallery/slides/slide5-320.webp');
   }
 
   .modal__item {

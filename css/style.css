@@ -560,87 +560,87 @@ address {
 /* backgrounds for dropdown menu item */
 /* Realism */
 .dropdown__item_tintorreto {
-  background-image: url('../img/header/dropdown/tintoretto.jpg');
+  background-image: url('../img/header/dropdown/tintoretto.webp');
 }
 
 .dropdown__item_friedrich {
-  background-image: url('../img/header/dropdown/friedrich.jpg');
+  background-image: url('../img/header/dropdown/friedrich.webp');
 }
 
 .dropdown__item_leonardo {
-  background-image: url('../img/header/dropdown/leonardo.jpg');
+  background-image: url('../img/header/dropdown/leonardo.webp');
 }
 
 .dropdown__item_verrocchio {
-  background-image: url('../img/header/dropdown/verrocchio.jpg');
+  background-image: url('../img/header/dropdown/verrocchio.webp');
 }
 
 /* Impressionism */
 .dropdown__item_monet {
-  background-image: url('../img/header/dropdown/monet.jpg');
+  background-image: url('../img/header/dropdown/monet.webp');
 }
 
 .dropdown__item_sisley {
-  background-image: url('../img/header/dropdown/sisley.jpg');
+  background-image: url('../img/header/dropdown/sisley.webp');
 }
 
 .dropdown__item_mane {
-  background-image: url('../img/header/dropdown/mane.jpg');
+  background-image: url('../img/header/dropdown/mane.webp');
 }
 
 .dropdown__item_renoir {
-  background-image: url('../img/header/dropdown/renoir.jpg');
+  background-image: url('../img/header/dropdown/renoir.webp');
 }
 
 /* Post-impressionism */
 .dropdown__item_van-gogh {
-  background-image: url('../img/header/dropdown/van-gogh.jpg');
+  background-image: url('../img/header/dropdown/van-gogh.webp');
 }
 
 .dropdown__item_cezanne {
-  background-image: url('../img/header/dropdown/cezanne.jpg');
+  background-image: url('../img/header/dropdown/cezanne.webp');
 }
 
 .dropdown__item_gauguin {
-  background-image: url('../img/header/dropdown/gauguin.jpg');
+  background-image: url('../img/header/dropdown/gauguin.webp');
 }
 
 .dropdown__item_sulfur {
-  background-image: url('../img/header/dropdown/sulfur.jpg');
+  background-image: url('../img/header/dropdown/sulfur.webp');
 }
 
 /* Avant-garde */
 .dropdown__item_kandinsky {
-  background-image: url('../img/header/dropdown/kandinsky.jpg');
+  background-image: url('../img/header/dropdown/kandinsky.webp');
 }
 
 .dropdown__item_marinetti {
-  background-image: url('../img/header/dropdown/marinetti.jpg');
+  background-image: url('../img/header/dropdown/marinetti.webp');
 }
 
 .dropdown__item_malevich {
-  background-image: url('../img/header/dropdown/malevich.jpg');
+  background-image: url('../img/header/dropdown/malevich.webp');
 }
 
 .dropdown__item_picasso {
-  background-image: url('../img/header/dropdown/picasso.jpg');
+  background-image: url('../img/header/dropdown/picasso.webp');
 }
 
 /* Futurism */
 .dropdown__item_carra {
-  background-image: url('../img/header/dropdown/carra.jpg');
+  background-image: url('../img/header/dropdown/carra.webp');
 }
 
 .dropdown__item_pratella {
-  background-image: url('../img/header/dropdown/pratella.jpg');
+  background-image: url('../img/header/dropdown/pratella.webp');
 }
 
 .dropdown__item_severin {
-  background-image: url('../img/header/dropdown/severin.jpg');
+  background-image: url('../img/header/dropdown/severin.webp');
 }
 
 .dropdown__item_balla {
-  background-image: url('../img/header/dropdown/balla.jpg');
+  background-image: url('../img/header/dropdown/balla.webp');
 }
 
 /* START simplebar customize */
@@ -837,15 +837,15 @@ address {
 }
 
 .hero__slide_1 {
-  background-image: url('../img/swiper/1920/birmingham-museums-1-1920x700.jpg');
+  background-image: url('../img/swiper/1920/birmingham-museums-1-1920x700.webp');
 }
 
 .hero__slide_2 {
-  background-image: url('../img/swiper/1920/birmingham-museums-2-1920x700.jpg');
+  background-image: url('../img/swiper/1920/birmingham-museums-2-1920x700.webp');
 }
 
 .hero__slide_3 {
-  background-image: url('../img/swiper/1920/birmingham-museums-3-1920x700.jpg');
+  background-image: url('../img/swiper/1920/birmingham-museums-3-1920x700.webp');
 }
 
 /*==============  End of Hero  ==============*/
@@ -875,7 +875,7 @@ address {
   margin-bottom: var(--section-margin);
   padding: 80px 0;
   min-height: 594px;
-  background-image: url('../img/gallery/gallery-bg.jpg');
+  background-image: url('../img/gallery/gallery-bg.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1190,27 +1190,27 @@ address {
 }
 
 .slider__slide_1 {
-  background-image: url('../img/gallery/slides/slide1.jpg');
+  background-image: url('../img/gallery/slides/slide1.webp');
 }
 
 .slider__slide_2 {
-  background-image: url('../img/gallery/slides/slide2.jpg');
+  background-image: url('../img/gallery/slides/slide2.webp');
 }
 
 .slider__slide_3 {
-  background-image: url('../img/gallery/slides/slide3.jpg');
+  background-image: url('../img/gallery/slides/slide3.webp');
 }
 
 .slider__slide_4 {
-  background-image: url('../img/gallery/slides/slide4.jpg');
+  background-image: url('../img/gallery/slides/slide4.webp');
 }
 
 .slider__slide_5 {
-  background-image: url('../img/gallery/slides/slide5.jpg');
+  background-image: url('../img/gallery/slides/slide5.webp');
 }
 
 .slider__slide_6 {
-  background-image: url('../img/gallery/slides/slide6.jpg');
+  background-image: url('../img/gallery/slides/slide6.webp');
 }
 
 /* modal windows */
@@ -1993,39 +1993,39 @@ path {
 }
 
 .projects__card-link_1::before {
-  background-image: url('../img/projects/partners/partners-1-freelands-foundation.jpg');
+  background-image: url('../img/projects/partners/partners-1-freelands-foundation.webp');
 }
 
 .projects__card-link_2::before {
-  background-image: url('../img/projects/partners/partners-2-institute.jpg');
+  background-image: url('../img/projects/partners/partners-2-institute.webp');
 }
 
 .projects__card-link_3::before {
-  background-image: url('../img/projects/partners/partners-3-workhouse.jpg');
+  background-image: url('../img/projects/partners/partners-3-workhouse.webp');
 }
 
 .projects__card-link_4::before {
-  background-image: url('../img/projects/partners/partners-4-1849.jpg');
+  background-image: url('../img/projects/partners/partners-4-1849.webp');
 }
 
 .projects__card-link_5::before {
-  background-image: url('../img/projects/partners/partners-5-hiscox.jpg');
+  background-image: url('../img/projects/partners/partners-5-hiscox.webp');
 }
 
 .projects__card-link_6::before {
-  background-image: url('../img/projects/partners/partners-6-camden.jpg');
+  background-image: url('../img/projects/partners/partners-6-camden.webp');
 }
 
 .projects__card-link_7::before {
-  background-image: url('../img/projects/partners/partners-7-stassen.jpg');
+  background-image: url('../img/projects/partners/partners-7-stassen.webp');
 }
 
 .projects__card-link_8::before {
-  background-image: url('../img/projects/partners/partners-8-watts.jpg');
+  background-image: url('../img/projects/partners/partners-8-watts.webp');
 }
 
 .projects__card-link_9::before {
-  background-image: url('../img/projects/partners/partners-9-esad.jpg');
+  background-image: url('../img/projects/partners/partners-9-esad.webp');
 }
 
 /* settings swiper */
