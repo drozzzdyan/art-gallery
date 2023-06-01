@@ -297,6 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //////////////////////////////////////////////////////////////////////////////////
 
   ymaps.ready(init);
+
   function init() {
     let myMap = new ymaps.Map("map", {
       center: [55.76027392, 37.61464719],
@@ -327,13 +328,20 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('stop-scroll');
   }
 
+  function offBurger() {
+    burger.classList.remove('burger_close');
+    menu.classList.remove('menu_open');
+    document.body.parentNode.classList.remove('stop-scroll');
+    document.body.classList.remove('stop-scroll');
+  }
+
   burger.addEventListener('click', () => {
-    switchBurger()
+    switchBurger();
   })
 
   navLinks.forEach(element => {
     element.addEventListener('click', () => {
-      switchBurger()
+      offBurger();
     })
   });
 
